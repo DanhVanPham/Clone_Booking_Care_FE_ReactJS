@@ -1,0 +1,83 @@
+.doctor-detail-container {
+
+    .intro-doctor {
+        display: flex;
+        padding: 20px 100px;
+
+        // .detail-doctor-content-left {
+        //     background-size    : cover !important;
+        //     background-repeat  : no-repeat !important;
+        //     background-position: center !important;
+        //     background-color   : #eee;
+        //     border-radius      : 50%;
+        //     width              : 120px;
+        //     height             : 120px;
+        //     margin             : 0px 24px;
+        // }
+
+        // .detail-doctor-content-right {
+        //     width         : 40%;
+        //     display       : flex;
+        //     flex-direction: column;
+        //     padding-left  : 10px;
+
+        //     .up {
+        //         font-size    : 20px;
+        //         font-weight  : 600;
+        //         white-space  : nowrap;
+        //         max-width    : 100%;
+        //         overflow     : hidden;
+        //         text-overflow: ellipsis;
+        //     }
+
+        //     .down {
+        //         padding-top       : 10px;
+        //         display           : -webkit-box;
+        //         -webkit-line-clamp: 3;
+        //         -webkit-box-orient: vertical;
+        //         overflow          : hidden;
+        //         text-overflow     : ellipsis;
+        //         word-break        : break-word;
+        //     }
+        // }
+    }
+
+    .detail-infor-doctor {
+        padding         : 10px 100px;
+        background-color: #f9f9f9;
+        border-top      : 1px solid #ccc;
+
+        h3 {
+            font-size  : 17px;
+            padding-top: 18px;
+        }
+
+        p {
+            line-height: 20px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .comment-doctor {
+            padding: 10px 100px;
+        }
+    }
+
+    .schedule-doctor {
+        margin    : 0 100px;
+        display   : flex;
+        min-height: 200px;
+        padding   : 24px;
+
+        .content-left {
+            width       : 50%;
+            border-right: 1px solid #eee;
+        }
+
+        .content-right {
+            width: 50%;
+        }
+    }
+}

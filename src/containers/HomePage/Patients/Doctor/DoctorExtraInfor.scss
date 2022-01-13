@@ -1,0 +1,86 @@
+.doctor-extra-infor-container {
+    padding-left: 15px;
+
+    .content-up {
+        margin-bottom: 10px;
+        padding      : 15px 0;
+        border-bottom: 1px solid #eee;
+
+        .text-address {
+            text-transform: uppercase;
+            color         : #666;
+            font-weight   : 600;
+            font-size     : 14px;
+        }
+
+        .name-clinic {
+            font-weight: 600;
+            font-size  : 14px;
+            padding    : 5px 0;
+            color      : #333;
+        }
+    }
+
+    .content-down {
+
+        .show-detail,
+        .hide-detail {
+            cursor        : pointer;
+            font-size     : 14px;
+            color         : #45c3d2;
+            word-spacing  : 1px;
+            font-weight   : 500;
+            margin-left   : 4px;
+            text-transform: none;
+        }
+
+        .title-price {
+            text-transform: uppercase;
+            color         : #666;
+            font-size     : 14px;
+            font-weight   : 600;
+            padding       : 6px 0;
+            display       : flex;
+            column-gap    : 4px;
+
+            .price-number {
+                font-size     : 13.7px;
+                text-transform: none;
+                font-weight   : lighter;
+                color         : #393838;
+            }
+        }
+
+        .detail-infor {
+            border       : 1px solid #ddd;
+            margin-bottom: 10px;
+
+            .up {
+                display         : flex;
+                flex-wrap       : wrap;
+                justify-content : space-between;
+                background-color: #f8f8f8;
+                padding         : 10px;
+                border-bottom   : 1px solid #ddd;
+
+                .detail-infor-note {
+                    width      : 100%;
+                    font-weight: 600;
+                    font-size  : 13px;
+                    padding    : 10px 0 0;
+                }
+            }
+
+            .down {
+                background-color  : #eee;
+                padding           : 10px;
+                display           : -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow          : hidden;
+                text-overflow     : ellipsis;
+                word-break        : break-word;
+            }
+        }
+    }
+}

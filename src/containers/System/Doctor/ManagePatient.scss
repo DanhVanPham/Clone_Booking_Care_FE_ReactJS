@@ -1,0 +1,25 @@
+.manage-patient-container {
+    .manage-patient-body {
+        margin-top: 20px;
+        padding   : 0px 20px;
+        width     : 100%;
+
+        .table-manage-patient {
+            margin-top: 25px;
+
+            table,
+            th,
+            td {
+                border: 1px solid black;
+            }
+        }
+    }
+}
+
+div._loading_overlay_wrapper {
+    position: unset;
+
+    ._loading_overlay_overlay {
+        z-index: 999999;
+    }
+}
