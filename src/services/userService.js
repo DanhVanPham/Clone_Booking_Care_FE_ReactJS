@@ -89,13 +89,13 @@ const getScheduleDoctorByDate = async (doctorId, date) => {
 
 const getDoctorExtraInforById = async (doctorId) => {
   return await axios.get(
-    `http://localhost:8081/api/v1/get-extra-infor-doctor-by-id?doctorId=${doctorId}`
+    `/api/v1/get-extra-infor-doctor-by-id?doctorId=${doctorId}`
   );
 };
 
 const getProfileDoctorById = async (doctorId) => {
   return await axios.get(
-    `http://localhost:8081/api/v1/get-profile-doctor-by-id?doctorId=${doctorId}`
+    `/api/v1/get-profile-doctor-by-id?doctorId=${doctorId}`
   );
 };
 
@@ -112,18 +112,18 @@ const createNewSpecialtyService = async (data) => {
 };
 
 const getAllSpecialty = async () => {
-  return await axios.get(`http://localhost:8081/api/v1/get-specialty`);
+  return await axios.get(`/api/v1/get-specialty`);
 };
 
 const getSpecialtyByIdService = async (specialtyId) => {
   return await axios.get(
-    `http://localhost:8081/api/v1/get-specialty-by-id?specialtyId=${specialtyId}`
+    `/api/v1/get-specialty-by-id?specialtyId=${specialtyId}`
   );
 };
 
 const getAllDoctorBySpecialtyIdService = async (specialtyId) => {
   return await axios.get(
-    `http://localhost:8081/api/v1/get-all-doctor-by-specialty?specialtyId=${specialtyId}`
+    `/api/v1/get-all-doctor-by-specialty?specialtyId=${specialtyId}`
   );
 };
 
@@ -132,7 +132,7 @@ const getAllDoctorBySpecialtyAndLocationService = async (
   provinceId
 ) => {
   return await axios.get(
-    `http://localhost:8081/api/v1/get-all-doctor-by-location-and-specialty?specialtyId=${specialtyId}&provinceId=${provinceId}`
+    `/api/v1/get-all-doctor-by-location-and-specialty?specialtyId=${specialtyId}&provinceId=${provinceId}`
   );
 };
 
@@ -141,23 +141,23 @@ const createNewClinicService = async (data) => {
 };
 
 const getAllClinicsService = async () => {
-  return await axios.get(`http://localhost:8081/api/v1/get-clinics`);
+  return await axios.get(`/api/v1/get-clinics`);
 };
 
 const getClinicByIdService = async (clinicId) => {
   return await axios.get(
-    `http://localhost:8081/api/v1/get-detail-clinic-by-id?clinicId=${clinicId}`
+    `/api/v1/get-detail-clinic-by-id?clinicId=${clinicId}`
   );
 };
 
 const getListPatientForDoctorService = async (doctorId, date) => {
   return await axios.get(
-    `http://localhost:8081/api/v1/get-list-patient-for-doctor?doctorId=${doctorId}&date=${date}`
+    `/api/v1/get-list-patient-for-doctor?doctorId=${doctorId}&date=${date}`
   );
 };
 
 const sendRemedyService = async (data) => {
-  return await axios.post(`http://localhost:8081/api/v1/send-remedy`, data);
+  return await axios.post(`/api/v1/send-remedy`, data);
 };
 export {
   handleLogin,
